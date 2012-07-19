@@ -1,0 +1,4 @@
+[GntWM::binding]
+c-right = window-next
+c-w = window-close
+c-left = window-prev
