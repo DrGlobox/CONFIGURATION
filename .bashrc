@@ -4,8 +4,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias grep='grep --color=auto'
 alias r='rm *~;ls .'
-alias betilla="ssh locatelli@178.170.101.100"
-alias gate="ssh plocatel@gate-info.iut-bm.univ-fcomte.fr"
+alias gloobox="ssh gloobox@gloobox.info"
 
 complete -cf sudo
 eval "`dircolors -b`"
