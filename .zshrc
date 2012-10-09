@@ -10,6 +10,15 @@ alias ll='ls -l --color=auto'
 alias grep='grep --color=auto'
 alias r='rm *~;ls .'
 alias gloobox="ssh gloobox@gloobox.info"
+alias wicd="wicd-curses"
+alias speed="curl 'http://speedtest.wdc01.softlayer.com/downloads/test500.zip' >> /dev/null"
+#alias speed="wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip"
+
+
+export _humbleemail="locap25@gmail.com"
+export _humblepassword="pl25480!"
+export _humbleand3bundlekey="W2hrAVEC3uKW"
+
 
 
 #hosts

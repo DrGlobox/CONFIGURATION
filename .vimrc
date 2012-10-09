@@ -9,8 +9,8 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
-" The text width cannot be mot longer than 80 coloumns
-set tw=80
+" The text width cannot be mot longer than 100 coloumns
+set tw=100
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
