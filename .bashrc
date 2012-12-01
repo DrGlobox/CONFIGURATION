@@ -4,6 +4,13 @@ alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias grep='grep --color=auto'
 alias r='rm *~;ls .'
+alias gloobox="ssh gloobox@gloobox.info"
+
+export _humbleemail="locap25@gmail.com"
+export _humblepassword="pl25480!"
+export _humbleand3bundlekey="W2hrAVEC3uKW"
+
+
 
 complete -cf sudo
 eval "`dircolors -b`"

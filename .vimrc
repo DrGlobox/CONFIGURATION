@@ -12,6 +12,9 @@
 " The text width cannot be mot longer than 100 coloumns
 set tw=100
 
+" The color scheme is Slate
+:colorscheme slate
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -105,10 +108,11 @@ endif
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Auto insert header
+autocmd BufNewFile  main.cpp	0r ~/.vim/main.cpp|5
 autocmd BufNewFile  *.sh	0r ~/.vim/skeleton.sh|3
 autocmd BufNewFile  *.py	0r ~/.vim/skeleton.py|3
 autocmd BufNewFile  *.cpp	0r ~/.vim/skeleton.cpp|7
-autocmd BufNewFile  *.c		0r ~/.vim/skeleton.c|5
+autocmd BufNewFile  *.h		0r ~/.vim/skeleton.h|7
 
 " Allow to write in root
 cmap w!! %!sudo tee > /dev/null %

@@ -6,8 +6,9 @@ cp .zshrc ~/.
 echo "install .bashrc"
 cp .bashrc ~/.	
 
+echo "install .vimrc"
+cp .vimrc ~/. 
+
 echo "install .gntrc"
 cp .gntrc ~/. 
 
-echo "install .vimrc"
-cp .vimrc ~/. 
