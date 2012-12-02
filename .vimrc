@@ -108,6 +108,7 @@ endif
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Auto insert header
+autocmd BufNewFile  Main.java	0r ~/.vim/Main.java|5
 autocmd BufNewFile  main.cpp	0r ~/.vim/main.cpp|5
 autocmd BufNewFile  *.sh	0r ~/.vim/skeleton.sh|3
 autocmd BufNewFile  *.py	0r ~/.vim/skeleton.py|3
