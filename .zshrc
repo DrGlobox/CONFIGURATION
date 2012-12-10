@@ -58,6 +58,8 @@ alias ll='ls --color=auto -lha'
 alias mplayerfb='mplayer -vo fbdev -vf scale=1024:768'
 export GREP_COLOR=31
 alias grep='grep --color=auto'
+alias valgrind='valgrind --tool=memcheck --leak-check=summary --leak-resolution=high --show-reachable=yes'
+alias cat='echo "miaou"; cat'
 
 # un VRAI éditeur de texte ;)
 export EDITOR=/usr/bin/vim

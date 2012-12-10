@@ -151,4 +151,61 @@ setlocal spell spelllang=fr,en
 
 set smartindent
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=5
+
+"TREE
+"map NERDTreeToggle <CR>
+"TAG
+let Tlist_Ctags_Cmd = "/usr/bin/ctags" 
+let Tlist_WinWidth = 40
+"TlistToggle
+set nocompatible " be iMproved
+filetype off " required!
+"Powerline
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+" Vundle setup
+" required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/syntastic'
+Bundle 'vim-scripts/wombat256.vim'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'taglist.vim'
+Bundle 'SearchComplete'
+Bundle 'SuperTab-continued.'
+Bundle 'SuperTab'
+Bundle 'FindInNERDTree'
+Bundle 'snipMate'
+" non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+" ...
+
+filetype plugin indent on " required!
+"
+" Brief help
+" :BundleList - list configured bundles
+" :BundleInstall(!) - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!) - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
