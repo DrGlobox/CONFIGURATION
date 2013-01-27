@@ -149,3 +149,27 @@ set incsearch
 set smartindent
 set tabstop=4
 set shiftwidth=5
+
+set nocompatible " be iMproved
+filetype off " required!
+
+" Vundle setup
+" required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'Lokaltog/vim-powerline'
+
+
+"POWERLINE
+    set nocompatible   " Disable vi-compatibility
+    set laststatus=2   " Always show the statusline
+    set encoding=utf-8 " Necessary to show Unicode glyphs
+    set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
