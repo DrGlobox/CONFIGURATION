@@ -149,10 +149,3 @@ set incsearch
 set smartindent
 set tabstop=4
 set shiftwidth=5
-
-" Vundle
-	set nocompatible
-	filetype off " required for vundle
-    set rtp+=~/.vim/bundle/vundle
-    call vundle#rc()
-    Bundle 'Lokaltog/vim-powerline'
