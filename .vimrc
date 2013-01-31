@@ -12,8 +12,7 @@
 " The text width cannot be mot longer than 100 coloumns
 set tw=100
 
-" The color scheme is Slate
-:colorscheme slate
+
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -150,8 +149,10 @@ set smartindent
 set tabstop=4
 set shiftwidth=5
 
-set nocompatible " be iMproved
-filetype off " required!
+"set nocompatible " be iMproved
+"filetype off " required!
+
+map <silent><f3> :NEXTCOLOR<cr>
 
 " Vundle setup
 " required!
@@ -161,12 +162,11 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
 Bundle 'Lokaltog/vim-powerline'
 
+"colorscheme eclipse
+"colorscheme zendnb
+colorscheme jellybeans
 
 "POWERLINE
     set nocompatible   " Disable vi-compatibility
