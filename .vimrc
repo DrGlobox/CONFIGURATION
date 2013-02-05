@@ -42,11 +42,14 @@ cmap w!! %!sudo tee > /dev/null %
 set backupdir=~/.backup,.,/tmp
 
 "tab = 4 spaces
-"set smartindent
-set cindent "Better than smartindent
+set smartindent
+"set cindent "Better than smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+filetype on
+filetype plugin on
+filetype indent on
 
 "dinamic search and highlight search
 set incsearch
