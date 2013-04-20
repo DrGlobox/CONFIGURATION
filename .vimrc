@@ -27,6 +27,10 @@ set showcmd
 " Autowrite before changing file or executing external commands
 set autowrite
 
+"Enables filetype detection
+"filetype on            
+"filetype plugin on    
+
 " switch between header and C code with f4
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
@@ -35,14 +39,21 @@ autocmd BufNewFile  *.py	0r ~/.vim/skeleton.py|3
 autocmd BufNewFile  *.cpp	0r ~/.vim/skeleton.cpp|7
 autocmd BufNewFile  *.h		0r ~/.vim/skeleton.h|7
 
+" Prolog
+au BufNewFile,BufReadPost *.prolog so ~/.vim/syntax/prolog.vim
+
 " Allow to write in root
 cmap w!! %!sudo tee > /dev/null %
 
 " Centralise backup files
 set backupdir=~/.backup,.,/tmp
 
+"Change the terminal title
+set title
+
 "tab = 4 spaces
-set smartindent
+set autoindent
+"set smartindent
 "set cindent "Better than smartindent
 set tabstop=4
 set shiftwidth=4
@@ -76,12 +87,9 @@ colorscheme jellybeans
 "colorscheme eclipse
 "colorscheme zendnb
 
-" Vundle setup
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" Bundle :
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
+
+
+execute pathogen#infect()
 
 "POWERLINE
 "set nocompatible   " Disable vi-compatibility
@@ -110,6 +118,15 @@ set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+
+
+"gitgutter
+nmap <silent> <F2> :GitGutterEnable<CR>
+let g:gitgutter_enabled = 0
+
+"Vim Css color
+let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 """"""""""""""""
 " Don't know really what is it ...

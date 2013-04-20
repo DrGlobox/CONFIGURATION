@@ -58,11 +58,13 @@ alias ll='ls --color=auto -lha'
 alias mplayerfb='mplayer -vo fbdev -vf scale=1024:768'
 export GREP_COLOR=31
 alias grep='grep --color=auto'
-alias valgrind='valgrind --tool=memcheck --leak-check=summary --leak-resolution=high --show-reachable=yes'
-alias cat='echo "miaou"; cat'
+alias RUNSEVER='python2 manage.py runserver 8080'
 
 # un VRAI éditeur de texte ;)
 export EDITOR=/usr/bin/vim
+
+export PATH=$PATH:/usr/lib
+export PATH=$PATH:/usr/lib/swipl-6.2.6/include/
 
 # Touche de commande
 bindkey "OH" beginning-of-line # Début
