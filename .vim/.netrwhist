@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/locatelli/.vim/bundle/vim-css-color'
+let g:netrw_dirhist_2='/home/locatelli/github'
+let g:netrw_dirhist_3='/home/locatelli/.vim/bundle/closetag'
+let g:netrw_dirhist_4='/home/locatelli/github/UTBM/Printemps2013/IA41/Projet_Tangram/PYTHON'
