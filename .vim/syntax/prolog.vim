@@ -5,7 +5,7 @@
 " URL:	       http://gott-gehabt.de/800_wer_wir_sind/thomas/Homepage/Computer/vim/syntax/prolog.vim
 
 " There are two sets of highlighting in here:
-" If the "prolog_highlighting_clean" variable exists, it is rather sparse.
+" If the prolog_highlighting_clean" variable exists, it is rather sparse.
 " Otherwise you get more highlighting.
 
 " Quit when a syntax file was already loaded

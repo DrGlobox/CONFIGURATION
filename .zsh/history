@@ -1,0 +1,489 @@
+: 1367749178:0;cd /etc/terminfo
+: 1367749210:0;vim .config/terminator/config 
+: 1367749287:0;vim .config/terminator/config
+: 1367749446:0;sudo apt-get install eclipse
+: 1367749876:0;eclipse
+: 1367749940:0;sudo apt-get install qt
+: 1367749943:0;sudo apt-get install qt4
+: 1367749959:0;sudo apt-get install qtcreator
+: 1367750335:0;git config --global color.ui auto
+: 1367750495:0;cd github/UTBM
+: 1367780743:0;vim .zshrc
+: 1367781080:0;git clone git@github.com:DrGlobox/apty.git
+: 1367781269:0;vim .vim
+: 1367781293:0;cat apty.sh
+: 1367781308:0;vim .vimrc
+: 1367781958:0;sudo chmod u+x apty.sh
+: 1367782074:0;chmod u+=x apty.sh
+: 1367782111:0;chmod 777 apty.sh
+: 1367782124:0;touch caca
+: 1367782127:0;chmod u+x caca
+: 1367782135:0;ls -l
+: 1367782188:0;cp apty.sh ~/;
+: 1367782192:0;cp apty.sh ~/.
+: 1367782230:0;cp apty.sh github/apty/.
+: 1367782239:0;rm caca
+: 1367782243:0;cd github/apty
+: 1367782264:0;cp -R apty ~/.
+: 1367782274:0;chmod u+x apty.sh
+: 1367782289:0;vim apty.sh
+: 1367782320:0;./apty.sh 
+: 1367783225:0;echo woami
+: 1367783228:0;echo whoami
+: 1367783233:0;echo $(whoami)
+: 1367783523:0;sudo ./apty.sh aa
+: 1367783559:0;w
+: 1367783568:0;./apty.sh aa
+: 1367783706:0;./apty.sh dsd
+: 1367783976:0;sudo ./apty.sh d
+: 1367784038:0;./apty.sh d
+: 1367784243:0;apt-get source 
+: 1367784486:0;more apt-get
+: 1367784626:0;vim trustdb.gpg
+: 1367784638:0;cd sources.list.d
+: 1367784657:0;sudo rm *~
+: 1367784665:0;vim apt-file.conf
+: 1367784690:0;vim apt.conf.d
+: 1367784806:0;cd /etc/apt
+: 1367784808:0;cd apt.conf.d
+: 1367784814:0;cd trusted.gpg.d
+: 1367784821:0;cat debian-archive-squeeze-automatic.gpg
+: 1367784829:0;:q
+: 1367784873:0;gpg debian-archive-squeeze-automatic.gpg
+: 1367784889:0;man gpg
+: 1367784924:0;gpg -d debian-archive-squeeze-automatic.gpg
+: 1367786902:0;cat tmp
+: 1367786913:0;sudo apt-get update > tmp
+: 1367787587:0;man apt-get
+: 1367788340:0;sudo su
+: 1367788515:0;clear; ./apty.sh a
+: 1367824171:0;sudo mount /dev/sda2 /media/store/
+: 1367824186:0;mkdir /media/store; sudo mount /dev/sda2 /media/store/
+: 1367824190:0;sudo mkdir /media/store; sudo mount /dev/sda2 /media/store/
+: 1367824262:0;man mount
+: 1367824375:0;cd /media
+: 1367824381:0;sudo rmdir store
+: 1367824422:0;touch aa
+: 1367824425:0;rm aa
+: 1367825255:0;mv Bach Bash
+: 1367826401:0;vim apty
+: 1367837825:0;cat /etc/apt/sources.list
+: 1367837965:0;echo 'first url, second url, third url' | sed 's/.*second \([^ ]*\).*/\1/'
+: 1367838010:0;cat /etc/apt/sources.list | sed 's/.*deb \([^ ]*\).*/\1/'
+: 1367838328:0;cat /etc/apt/sources.list | grep deb
+: 1367838336:0;cat /etc/apt/sources.list | grep "^deb"
+: 1367839267:0;echo someletters_12345_moreleters.ext | cut -d'_' -f 2
+: 1367839379:0;rm tmp
+: 1367839422:0;git commit -m "gitignore tmp file"
+: 1367840064:0;:w
+: 1367840791:0;rm /tmp/apty/update_done.tmp
+: 1367840958:0;ls /tmp/apty
+: 1367853812:0;./apty.sh a
+: 1367854060:0;sudo
+: 1367854457:0;./apty.sh -Sy fdkhdf
+: 1367854838:0;sudo ./apty.sh -Sy
+: 1367855970:0;chmod u+x progressbar.sh
+: 1367855972:0;./progressbar.sh
+: 1367856357:0;./apty.sh
+: 1367856613:0;echo $width
+: 1367856618:0;echo $LINES
+: 1367856623:0;echo $COLONNES
+: 1367856628:0;echo $COLUMNS
+: 1367858160:0;echo "\033[1;31mbold red text\033[0m\n"
+: 1367858175:0;echo "\033[1;bold red text\033[0m\n"
+: 1367858180:0;echo "\033mbold red text\033[0m\n"
+: 1367858189:0;echo "[1;31mbold red text\033[0m\n"
+: 1367858218:0;echo "[31mbold red text\033[0m\n"
+: 1367858224:0;echo "\033[31mbold red text\033[0m\n"
+: 1367858256:0;vim colors.sh
+: 1367858554:0;chmod u+x colors.sh
+: 1367859169:0;cat /tmp/apty/update.tmp
+: 1367859351:0;vim /tmp/apty/update.tmp
+: 1367859398:0;./apty.sh -Sy
+: 1367861284:0;yaourt java
+: 1367861425:0;./colors.sh
+: 1367861734:0;clear;./apty.sh -Sy
+: 1367861967:0;clear;./apty.sh -Sy aaz
+: 1367862334:0;clear;./apty.sh -Sy 
+: 1367862436:0;clear;./apty.sh -Sy -v
+: 1367862748:0;./apty.sh -Sy 
+: 1367866557:0;cp apty.py apty/.
+: 1367866570:0;rm apty.py
+: 1367866572:0;rm progressbar.sh
+: 1367866796:0;python apty.py 
+: 1367866800:0;python apty.py a
+: 1367866803:0;python apty.py -a
+: 1367867475:0;echo $EUID
+: 1367868225:0;sudo python apty.py -v
+: 1367868265:0;python apty.py -v
+: 1367868626:0;cd Bash
+: 1367868636:0;mv Bash Python
+: 1367869264:0;python apty.py -Syhtop
+: 1367871774:0;sudo kill -9 16547
+: 1367871796:0;htop
+: 1367872691:0;cd Programming/Python/apty
+: 1367872876:0;python apty.py
+: 1367873805:0;apt-get update
+: 1367874588:0;python apty.py -Syv
+: 1367874592:0;python apty.py -Sy -v
+: 1367910937:0;cd github/UTBM/Printemps2013/GL40
+: 1367910942:0;cd Cours
+: 1367936482:0;cp IA41_TP04.pdf ~/github/UTBM/Printemps2013/IA41/TP/.
+: 1367936541:0;cp IA41_TP0*.pdf ~/github/UTBM/Printemps2013/IA41/TP/.
+: 1367936566:0;cp IA41_TP01.pdf ~/github/UTBM/Printemps2013/IA41/TP/.
+: 1367936617:0;cd github/UTBM/Printemps2013
+: 1367936654:0;cd IA41/
+: 1367936662:0;cd TP
+: 1367936693:0;vim td1.prol
+: 1367937178:0;cd .vim
+: 1367937179:0;cd bundle
+: 1367937182:0;git clone https://github.com/ervandew/supertab.git
+: 1367938463:0;cd github/UTBM/Printemps2013/IA41/TP
+: 1367938467:0;vim td4.prol
+: 1367940894:0;mv td4.prol tplm.prol
+: 1367941820:0;mv srs.prol srs.pl
+: 1367941829:0;mv tplm.prol tplm.pl
+: 1367941833:0;vim 
+: 1367944076:0;cd github/UTBM/Printemps2013/IA41/
+: 1367944086:0;git clone git@github.com:DrGlobox/Projet_Tangram.git
+: 1367944109:0;vim ~/github/UTBM/.gitignore
+: 1367944214:0;ms
+: 1367944254:0;python setup.py
+: 1367944281:0;cd hanoi/n
+: 1367944282:0;cd hanoi/
+: 1367944366:0;cd sudoku
+: 1367944373:0;python sudoku.py
+: 1367944383:0;python2 sudoku.py
+: 1367944388:0;python2.7 sudoku.py
+: 1367944497:0;cd .
+: 1367944553:0;rm coins.pl interface.py pl_launcher.py main.py
+: 1367944562:0;vim shapes.txt
+: 1367946278:0;sudo ./configure --enable-shared
+: 1367946295:0;./configure
+: 1367946306:0;sudo ./configure
+: 1367946333:0;rm -rf pl-6.0.2
+: 1367946340:0;cp pl-6.0.2.tar.gz ~/tmp
+: 1367946359:0;tar -xzvf pl-6.0.2.tar.gz
+: 1367946406:0;./configure --enable-shared
+: 1367946434:0;make
+: 1367946550:0;cd ~/github/UTBM/Printemps2013/IA41/Projet_Tangram
+: 1367946617:0;rm -rf LIB/pyswip-0.2.3/pl-6.0.2.tar.gz
+: 1367946647:0;git commit -am "suivre INSTALL dans LIB/"
+: 1367946666:0;git add tangram.pl
+: 1367946677:0;git commit -am "TANGRAM QUI MARCHE"
+: 1368007702:0;cd github/UTBM/Printemps2013/IA41/Projet_Tangram
+: 1368008082:0;cat */* | grep query
+: 1368008097:0;cat */* | grep query(
+: 1368008101:0;cat */* | grep "query("
+: 1368009257:0;python LIB/pyswip-0.2.3/examples/coins/coins.py
+: 1368009267:0;cd LIB/pyswip-0.2.3/examples/coins/coins.py
+: 1368009270:0;cd LIB/pyswip-0.2.3/examples/coins
+: 1368009287:0;python coins_new.py
+: 1368009435:0;vim README.linux
+: 1368009498:0;sudo apt-get install \\
+        build-essential autoconf curl chrpath \\
+        ncurses-dev libreadline-dev libunwind8-dev \\
+        libgmp-dev \\
+        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \\
+        libxpm-dev libxt-dev pkg-config \\
+        libssl-dev \\
+        unixodbc-dev \\
+        openjdk-7-jdk junit \\
+        zlib1g-dev libarchive-dev \\
+        libossp-uuid-dev
+: 1368009517:0;sudo apt-get install \\
+        build-essential autoconf curl chrpath \\
+        ncurses-dev libreadline-dev \\
+        libgmp-dev \\
+        libxext-dev libice-dev libjpeg-dev libxinerama-dev libxft-dev \\
+        libxpm-dev libxt-dev pkg-config \\
+        libssl-dev \\
+        unixodbc-dev \\
+        openjdk-7-jdk junit \\
+        zlib1g-dev libarchive-dev \\
+        libossp-uuid-dev
+: 1368009627:0;cd packages
+: 1368009635:0;cd Python
+: 1368009650:0;mv ~/github/UTBM/Printemps2013/IA41/Projet_Tangram .
+: 1368009652:0;ld
+: 1368009654:0;ls 
+: 1368009708:0;cp build.templ build
+: 1368009710:0;./build
+: 1368009880:0;cat README.linux
+: 1368009955:0;cd LIB/pyswip-0.2.3/
+: 1368010060:0;python
+: 1368010068:0;cat INSTALL
+: 1368010156:0;python setup.py uninstall
+: 1368010191:0;cat README
+: 1368010225:0;python coins
+: 1368010268:0;swipl -S coins.pl
+: 1368010287:0;vim examples/coins/coins.py
+: 1368010320:0;swipl -q coins.pl
+: 1368010324:0;swipl -s coins.pl
+: 1368010595:0;rm ù
+: 1368010597:0;rm *
+: 1368010639:0;rm -rf *
+: 1368010645:0;rm -rf P*
+: 1368010654:0;wget http://gollem.science.uva.nl/cgi-bin/nph-download/SWI-Prolog/pl-5.6.34.tar.gz
+: 1368010695:0;man swipl 
+: 1368010723:0;swipl   --version
+: 1368010797:0;apt-get autoremove swi-prolog
+: 1368010799:0;sudo apt-get autoremove swi-prolog
+: 1368010936:0;python setup.py clea r
+: 1368010938:0;python setup.py clear
+: 1368011032:0;sudo apt-get install swiprolog
+: 1368011053:0;sudo apt-get install swi-prolog
+: 1368011126:0;cd ctypes-1.0.2
+: 1368011203:0;sudo apt-get install gcc
+: 1368011226:0;cat README.txt
+: 1368011304:0;cd test
+: 1368011307:0;./runtests
+: 1368011348:0;python register_foreign.py
+: 1368011353:0;python create_term.py
+: 1368011628:0;cd draughts
+: 1368011635:0;python puzzle1.py
+: 1368013012:0;mv test.py prolog.py
+: 1368013209:0;rm *.swp
+: 1368013766:0;man swipl
+: 1368013899:0;rm prolog.py*
+: 1368013902:0;rm test.py *
+: 1368013908:0;rm test.py
+: 1368013910:0;vim money.pl
+: 1368013932:0;vim test.py
+: 1368013974:0;python test.py
+: 1368014101:0;vim setup.py
+: 1368014128:0;cd pyswip-0.2.2
+: 1368014141:0;python setup.py install
+: 1368014175:0;python coins.py -v
+: 1368014229:0;vim coins.p
+: 1368016701:0;vim pylog.py
+: 1368017056:0;locate swipl
+: 1368017065:0;find swipl
+: 1368017092:0;cd /usr/lib/swi-prolog
+: 1368017192:0;cd 
+: 1368017201:0;cd Programming/Python/Projet_Tangram/ls
+: 1368017208:0;cd LIB
+: 1368017223:0;python father.py
+: 1368017226:0;vim father.py
+: 1368017239:0;cd hanoi
+: 1368017246:0;python hanoi_simple.py
+: 1368017252:0;python hanoi.py
+: 1368017384:0;swipl
+: 1368017492:0;vim hanoi_simple.py
+: 1368137632:0;tee help_wifi
+: 1368137640:0;cat help_wifi
+: 1368137650:0;vim help_wifi
+: 1368137674:0;cd /var
+: 1368137681:0;cd log
+: 1368137710:0;ll
+: 1368137746:0;ll | grep "00:"
+: 1368137764:0;vim wtmp
+: 1368137770:0;vim user.log
+: 1368137780:0;vim messages
+: 1368137789:0;vim kern.log
+: 1368137793:0;sudo vim kern.log
+: 1368137849:0;sudo vim auth.log
+: 1368137856:0;sudo vim debug
+: 1368137865:0;sudo vim lpr.log
+: 1368137879:0;sudo vim wtmp
+: 1368137884:0;sudo vim user.log
+: 1368137910:0;sudo dmesg
+: 1368137953:0;sudo apt-get install wicd
+: 1368130787:0;reboot
+: 1368130790:0;sudo reboot
+: 1368130884:0;sudo apt-get autoremove wicd
+: 1368130978:0;python setup.py clean
+: 1368130982:0;sudo python setup.py clean
+: 1368131203:0;cd build
+: 1368131210:0;cd build/
+: 1368131212:0;cd lib.linux-x86_64-2.7
+: 1368131215:0;cd pyswip
+: 1368131219:0;cd ../../..
+: 1368131225:0;vim INSTALL
+: 1368131276:0;wget http://www.swi-prolog.org/download/stable/src/pl-6.0.2.tar.gz
+: 1368131325:0; tar xzvf pl-6.0.2.tar.gz
+: 1368131486:0;cd ../
+: 1368131514:0;cd ../..
+: 1368131516:0;cd pl-6.0.2
+: 1368131521:0;sudo make clean
+: 1368131537:0;CFLAGS=-ggdb ./configure --enable-shared
+: 1368131543:0;sudo make
+: 1368131569:0;more INSTALL
+: 1368131582:0;sudo make install
+: 1368131597:0;cd cd packages/clpqr
+: 1368131601:0;cd ;cd packages/clpqr
+: 1368131619:0;cd pyswip-0.2.
+: 1368131636:0;sudo python setup.py install
+: 1368131738:0;cd Programming/Python/Projet_Tangram/
+: 1368131771:0;cat LIB/pyswip-0.2.3/examples/hanoi/hanoi_simple.py >> main.py
+: 1368131898:0;python main.py
+: 1368132063:0;cd tmpls
+: 1368132203:0;vim ~/.vimrc
+: 1368132418:0;vim main.py
+: 1368133657:0;cat shapes.txt
+: 1368135265:0;rm shapes.txt
+: 1368135270:0;rm LIB
+: 1368135273:0;rm -r LIB
+: 1368135340:0;git commit -am "REMOVE ALL Py LIB stuff and first predicat"
+: 1368135383:0;vim README.md
+: 1368135517:0;git commit -am "READ ME changed"
+: 1368135751:0;vim test.sh
+: 1368135765:0;cat tangram.pl
+: 1368135816:0;git commit -am "ca a le merite d etre just"
+: 1368136856:0;git diff tangram.pl
+: 1368136871:0;git commitg  -am "Bon on va dire que c'est une piste"
+: 1368136878:0;git commit  -am "Bon on va dire que c'est une piste"
+: 1368172462:0;cd LaTex
+: 1368172467:0;rm *~
+: 1368172487:0;cp modele_cv_stage_fr.tex ~/tmp
+: 1368172490:0;cd ~/tmp
+: 1368178363:0;pdflatex modele_cv_stage_fr.tex
+: 1368178376:0;evince modele_cv_stage_fr.pdf
+: 1368178422:0;cp modele_cv_stage_fr.tex ~/github/LaTex/modele_cv_job_ete_fr.tex
+: 1368178893:0;cd pyswip-0.2.3
+: 1368178896:0;cd examples
+: 1368178905:0;python coins.py
+: 1368179673:0;cd ../hanoi
+: 1368179679:0;vim hanoi.py
+: 1368179755:0;cp hanoi_simple.py hanoi_simple2.py
+: 1368179759:0;vim hanoi_simple2.py
+: 1368179791:0;rm hanoi_simple2.py
+: 1368179800:0;cp hanoi.pl hanoi2.pl
+: 1368179823:0;swipl -s hanoi2.pl
+: 1368179868:0;swipl -q -f hanoi2.pl -g hanoi(3).
+: 1368179881:0;swipl -q -f hanoi2.pl -g hanoi(3),halt.
+: 1368180003:0;swipl -q -f hanoi2.pl -g hanoi(3)
+: 1368180014:0;vim hanoi2.pl
+: 1368180035:0;swipl -f hanoi2.pl -g hanoi(3)
+: 1368180041:0;swipl -f hanoi2.pl -g "hanoi(3)"
+: 1368180361:0;swipl -f hanoi2.pl -g "hanoi(3),halt"
+: 1368180374:0;cd ..
+: 1368180386:0;cd coins
+: 1368180416:0;swipl -f coins.pl -g "coins(X,100,500),halt"
+: 1368180479:0;swipl -f coins.pl -g "coins2(100,500),halt"
+: 1368180553:0;swipl -f coins.pl -g "coins2(100,500),S:w,halt"
+: 1368180556:0;swipl -f coins.pl -g "coins2(100,500),S,halt"
+: 1368180560:0;swipl -f coins.pl -g "coins2(S,100,500),S,halt"
+: 1368180579:0;vim coins.pl
+: 1368180780:0;vim coins.py
+: 1368180844:0;swipl -f coins.pl -g "coins(S,100,500),S,halt"
+: 1368180855:0;swipl -f coins.pl -g "coins(S,100,500),halt"
+: 1368180867:0;swipl -f coins.pl -g "coins(S,100,500),write(S),halt"
+: 1368181044:0;cd
+: 1368181050:0;cd Projet_Tangram
+: 1368181067:0;vim exec.sh
+: 1368181318:0;chmod u+x exec.sh
+: 1368181324:0;./exec.sh
+: 1368181424:0;git add exec.sh
+: 1368181435:0;git commit -am "Modifie Tangram.pl add exe.sh"
+: 1368192548:0;vim ~/.zshrc
+: 1368192574:0;zshrc
+: 1368192577:0;l
+: 1368192586:0;vim modele_cv_stage_fr.tex
+: 1368195082:0;swipl -s tangram.pl
+: 1368195483:0;git commit -am "Grandes lignes de l'algo"
+: 1368197210:0;sudo apt-get install inkscape
+: 1368205500:0;cd Programming
+: 1368205504:0;cd Python/apty
+: 1368381036:0;cd apty
+: 1368381042:0;vim apty.py
+: 1368381368:0;python apty.py -Sy
+: 1368381925:0;sudo apyt-get upgarde
+: 1368381929:0;sudo apt-get upgarde
+: 1368382325:0;python apty.py -Su
+: 1368384801:0;cls
+: 1368384958:0;cat 
+: 1368384986:0;echo
+: 1368385644:0;clear;python apty.py -Su
+: 1368386667:0;cat apty.py
+: 1368445304:0;sudo apt-get install virtualbox
+: 1368456349:0;cd Programming/Python/Projet_Tangram
+: 1368456370:0;vim tangram.pl
+: 1368456431:0;vim tangram_2.pl
+: 1368456613:0;vim tangram2.pl
+: 1368457842:0;swipl -s tangram2.pl
+: 1368472680:0;sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && sudo apt-get update -qq
+: 1368472750:0;sudo add-apt-repository ppa:upubuntu-com/chat
+: 1368472846:0;sudo apt-get install skype
+: 1368473095:0;vim /etc/apt/sources.list
+: 1368473166:0;cd downloads
+: 1368473168:0;dpkg -i skype-debian_2.2.0.35-1_i386.deb
+: 1368473172:0;sudo dpkg -i skype-debian_2.2.0.35-1_i386.deb
+: 1368473374:0;dpkg -i skype-debian_4.1.0.20-1_i386.deb
+: 1368473677:0;wget -O skype-install.deb http://www.skype.com/go/getskype-linux-deb-64
+: 1368473685:0;dpkg -i skype-install.deb
+: 1368473688:0;sudo dpkg -i skype-install.deb
+: 1368473788:0;sysctl
+: 1368473799:0;cpufreq-info
+: 1368473846:0;cat /proc/cpuinfo
+: 1368474022:0;sudo dpkg --add-architecture i386
+: 1368474082:0;sudo vim /etc/apt/sources.list
+: 1368474273:0;sudo apt-get update
+: 1368474283:0;sudo apt-get upgrade
+: 1368474291:0;sudo apt-get -f upgrade
+: 1368474440:0;sudo dpkg -i skype-debian_4.1.0.20-1_i386.deb
+: 1368475153:0; apt-get install ia32-libs ia32-libs-gtk
+: 1368475155:0;sudo  apt-get install ia32-libs ia32-libs-gtk
+: 1368511710:0;cd github
+: 1368511726:0;cd UTBM/Printemps2013/GL40/Cours
+: 1368535898:0;./help_wifi
+: 1368536398:0;lsusb
+: 1368538236:0;cp github/LaTex/modele_lettre.tex tmp/preavis.tex
+: 1368538240:0;vim tmp/preavis.tex
+: 1368538682:0;vim preavis.tex
+: 1368539074:0;pdflatex preavis.tex
+: 1368539077:0;evince preavis.pdf
+: 1368541248:0;cd tmp
+: 1368541277:0;chmod u+x speech.sh
+: 1368541314:0;sudo apt-get install flac
+: 1368541452:0;vim speech.sh
+: 1368541585:0;vim records.txt
+: 1368541600:0;vlc out.flac
+: 1368541701:0;mkdir ~/Programming/Python
+: 1368541705:0;cd ~/Programming/Python
+: 1368541760:0;git clone git@github.com:DrGlobox/Speech_Fitt.git
+: 1368541791:0;git clone https://github.com/DrGlobox/Speech_Fitt.git
+: 1368541805:0;cp ~/tmp/speech.sh Speech_Fitt/.
+: 1368541810:0;git add speech.sh
+: 1368541822:0;git commit -am "Speech google"
+: 1368541998:0;./speech.sh
+: 1368542068:0;cat records.txt
+: 1368542079:0;cat billet.txt
+: 1368542252:0;sudo apt-get install pyqt4-dev-tools 
+: 1368542449:0;*
+: 1368542520:0;git commit -am "git ignore"
+: 1368547195:0;git pull
+: 1368547203:0;vim .gitignore
+: 1368548539:0;cd Programming/Python
+: 1368548542:0;cd Speech_Fitt
+: 1368548545:0;vim
+: 1368552025:0;git st
+: 1368552033:0;git add .gitignore
+: 1368552042:0;git commit -m "gitignore"
+: 1368552054:0;git commit -am "Browser"
+: 1368552058:0;git push
+: 1368554393:0;vim /etc/network/interfaces
+: 1368554439:0;ifconfig
+: 1368642885:0;ls
+: 1368642916:0;vim cours.tex
+: 1368649281:0;cd github/UTBM/Printemps2013/HE09
+: 1368649284:0;pdflatex cours.tex
+: 1368649289:0;exit
+: 1368688065:0;ls
+: 1368688108:0;cd documents
+: 1368688110:0;ls
+: 1368688120:0;cat vpnclient
+: 1368688125:0;git clone git@github.com:DrGlobox/CONFIGURATION.git
+: 1368688140:0;ls
+: 1368688142:0;cd CONFIGURATION
+: 1368688142:0;ls
+: 1368688149:0;cat plugin-vim-install.sh
+: 1368688153:0;rm plugin-vim-install.sh
+: 1368688155:0;ls
+: 1368688159:0;ll
+: 1368688190:0;rm -r .vimrc .vim .zshrc *.old
+: 1368688205:0;cp -r ~/.vim ~/.vimrc
+: 1368688209:0;cp -R ~/.vim ~/.vimrc
+: 1368688219:0;cp -R ~/.vim ~/.vimrc .
+: 1368688247:0;vim
+: 1368688279:0;cp -R ~/.zsh ~/.zshrc .

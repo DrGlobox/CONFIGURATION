@@ -5,79 +5,111 @@
 # _ / /_ ___) |  _  |  _ <| |___ 
 #(_)____|____/|_| |_|_| \_\\____|
 #
- 
-# Complétion 
-autoload -U compinit
-compinit
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
-                             /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh_cache
-zstyle ':completion:*' verbose yes
-zstyle ':completion:*' list-colors ''
-zstyle ':competion:*' list-prompt
-zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
-zstyle ':completion:*' max-errors 3 numeric
-zstyle ':completion:*' file-sort type
-zmodload zsh/complist
-setopt extendedglob
-zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
-setopt BANG_HIST
+
+
+#==================== My Prompt =================================#
+local curdir="%d"
+local hostname="%M"
+local username="%n"
+local colorfg="%F"
+local uncolorfg="%f"
+local mytime="%*"
+local return_status="%?"
+source /home/locatelli/.zsh/zsh-git-prompt/zshrc.sh
+FPATH=~/.zsh/zsh-git-prompt/:$FPATH
+autoload -Uz zshrc.sh
+
+PROMPT="╔══\$(git_super_status)══╡$colorfg{blue}$curdir${uncolorfg}
+╚═╡$username$colorfg{red}:${uncolorfg}$hostname $colorfg{green}♪$uncolorfg "
+RPROMPT="$mytime"
+
+
+#==================== History =====================================#
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+HISTFILE=~/.zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+export HISTFILE HISTSIZE SAVEHIST
+setopt histverify
+
+
+
+#==================== Alias =====================================#
+alias zshrc="source ~/.zshrc"
+alias ls='ls --color=auto'
+alias ll='ls --color=auto -lha'
+alias l='ls --color=auto'
+alias grep='grep --color=auto'
+
+#==================== Auto complet ==============================#
+
+setopt globdots         # Match all files beginning by . be autocomplet
+setopt complete_in_word # Auto complet in word
+setopt CORRECT          # Correction of command name
+setopt NO_CASE_GLOB     # Case insensitive
+setopt NUMERIC_GLOB_SORT # Sort by Number
+setopt EXTENDED_GLOB
 unsetopt LIST_AMBIGUOUS
 
+#==================== ZStyle autocomplet ==============================#
+
+autoload -U zutil
+autoload -U compinit
+autoload -U complist
+compinit
+
+# Global completion behavior
+zstyle ':completion:*' completer _complete _prefix _approximate
+zstyle ':completion:*:complete:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' max-errors 1
+zstyle ':completion:*' use-ip true
+
+# Use 'ps -au$USER' for fetch user process list
+zstyle ':completion:*:processes' command 'ps -au$USER'
+
+zstyle ':completion:*' ignore-parents parent pwd
+
+# few simple completion definitions
+compdef _hosts mtr
+compdef _hosts rdesktop
+compdef _gnu_generic sort
+
+# Some zstyle specific to vi/vim
+zstyle ':completion:*:*:vi*:*' file-sort modification
+zstyle ':completion:*:*:vi*:*' ignored-patterns '*.(o|class)'
+
+# Message
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+
+# Cache
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
+# Kill
 zstyle ':completion:*:kill:*' command 'ps xf -u $USER -o pid,%cpu,cmd'
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:*:kill:*' menu yes select
 
-#only *.java for javac
-zstyle ':completion:*:javac:*' files '*.java'
+# Options
+setopt correct
+setopt always_to_end
 
-# Fait la complétion sur les fichiers et répertoires cachés
-setopt glob_dots
+zstyle ':completion:*' completer _expand _complete _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' original true
+zstyle ':completion:*:approximate:*' max-errors par 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
 
-#complete in words
-setopt complete_in_word
 
-# Traite les liens symboliques comme il faut
-setopt CHASE_LINKS
-
- 
-# Correction des commandes
-setopt correctall
- 
-# Un petit prompt sympa
-autoload -U promptinit
-promptinit
-prompt adam2
- 
-# Les alias marchent comme sous bash
-alias ls='ls --color=auto'
-alias ll='ls --color=auto -lha'
-alias mplayerfb='mplayer -vo fbdev -vf scale=1024:768'
-export GREP_COLOR=31
-alias grep='grep --color=auto'
-alias RUNSEVER='python2 manage.py runserver 8080'
-
-# un VRAI éditeur de texte ;)
-export EDITOR=/usr/bin/vim
-
-export PATH=$PATH:/usr/lib
-export PATH=$PATH:/usr/lib/swipl-6.2.6/include/
-
-# Touche de commande
-bindkey "OH" beginning-of-line # Début
-bindkey "OF" end-of-line # Fin
-bindkey "[3~" delete-char
-bindkey "" history-incremental-search-backward # Rechercher
-
-# Jamais de BEEP
-unsetopt BEEP
-unsetopt HIST_BEEP
-unsetopt LIST_BEEP
-
-# ask confirmation for rm *
-setopt RM_STAR_WAIT
+#==================== Divers ==============================#
+setopt NO_BEEP             # Never Beep
+setopt RM_STAR_WAIT        # Wait 10sec after rm *
 setopt NO_RM_STAR_SILENT
+export EDITOR=/usr/bin/vim
+setopt CHASE_LINKS         # GO to the true value of a relative link
+
+source /etc/zsh_command_not_found
 

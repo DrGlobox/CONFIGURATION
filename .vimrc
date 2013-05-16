@@ -36,17 +36,18 @@ map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Skeleton
 autocmd BufNewFile  *.py	0r ~/.vim/skeleton.py|3
-autocmd BufNewFile  *.cpp	0r ~/.vim/skeleton.cpp|7
-autocmd BufNewFile  *.h		0r ~/.vim/skeleton.h|7
+autocmd BufNewFile  *.sh	0r ~/.vim/skeleton.sh|3
+"autocmd BufNewFile  *.cpp	0r ~/.vim/skeleton.cpp|7
+"autocmd BufNewFile  *.h		0r ~/.vim/skeleton.h|7
 
 " Prolog
-au BufNewFile,BufReadPost *.prolog so ~/.vim/syntax/prolog.vim
+au BufNewFile,BufReadPost *.prol so ~/.vim/syntax/prolog.vim
 
 " Allow to write in root
 cmap w!! %!sudo tee > /dev/null %
 
 " Centralise backup files
-set backupdir=~/.backup,.,/tmp
+set backupdir=~/.backup,/tmp
 
 "Change the terminal title
 set title
@@ -119,14 +120,7 @@ set tags+=~/.vim/tags/qt4
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
-
-
-"gitgutter
-nmap <silent> <F2> :GitGutterEnable<CR>
-let g:gitgutter_enabled = 0
-
-"Vim Css color
-let g:cssColorVimDoNotMessMyUpdatetime = 1
+"powerline
 
 """"""""""""""""
 " Don't know really what is it ...
@@ -136,4 +130,5 @@ if has("vms")
 else
 	 set backup		" keep a backup file
 endif
+
 
